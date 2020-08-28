@@ -1,0 +1,19 @@
+.container, .subcontainer1, .subcontainer2, .subcontainer3, .subcontainer4 {
+  width: 100%;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.subcontainer1 {
+  background-color: #ebe0eb; }
+
+.subcontainer2 {
+  background-color: #d98cb3; }
+
+.subcontainer3 {
+  background-color: #99e6ff; }
+
+.subcontainer4 {
+  background-color: #ffff99; }

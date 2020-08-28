@@ -1,0 +1,18 @@
+@import "base";
+@import "variables";
+@import "mixins";
+
+.container{
+    width: $width_div;
+    background-color: lightcoral;
+    @include position_center(column);
+}
+
+@for $i from 1 through 4{
+ 
+        .#{subcontainer}#{$i}{
+            @extend .container;   
+            background-color: nth($colors, $i);
+        }    
+    
+}

@@ -1,0 +1,22 @@
+@mixin position_center($position) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $position;
+}
+
+
+
+@mixin logo (){
+    
+    width: $width_logo;
+    height: $height_logo;
+    background-size: contain;
+    position: relative;
+    
+    background-repeat: no-repeat;
+    
+    
+    top: 25px;
+    right: -30px;
+}
