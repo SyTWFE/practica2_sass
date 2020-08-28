@@ -1,11 +1,21 @@
 $main_color: #c3a2c3;
+
 $width_div: 100%;
-$height_div: 300px;
-$width_logo:150px;
+$height_div: 350px;
+
+$width_logo:400px;
 $height_logo:150px;
+
+$width_div_positions: 25%;
+$height_div_positions: 80%;
+$height_div_positions_global:500px;
+
+$width_icon:150px;
+$height_icon:150px;
+
 $height_subcontainer:30%;
-$font: 'OCR A Std', monospace;
-$colors: #ebe0eb, #d98cb3,#99e6ff , #ffff99;
+$subcontainercolors: #ebe0eb, #d98cb3,#99e6ff , #ffff99;
+
+$font: "Lucida Console", Courier, monospace;
 $title_font: Courier, monospace;
 $subtitle_font: "Consolas", monospace;
-$h2_font: Vegur, PT Sans, Verdana, sans-serif;

@@ -4,15 +4,33 @@
 
 .container{
     width: $width_div;
-    background-color: lightcoral;
+    height: $height_div;
+    background-color: $main_color;
+    border: black 1px solid;
     @include position_center(column);
 }
 
 @for $i from 1 through 4{
  
         .#{subcontainer}#{$i}{
-            @extend .container;   
-            background-color: nth($colors, $i);
-        }    
-    
+            @if($i != 1){
+                @extend .container;
+                background-color: nth($subcontainercolors, $i);
+                height: $height_subcontainer;
+            }
+            @else{
+                background-color: nth($subcontainercolors, $i);
+                height: height_div_positions_global;
+                @include productos(nth($subcontainercolors, $i));
+            }   
+        } 
 }
+
+.logo{
+    @include logo;
+}
+
+.icon{
+    @include icon;
+}
+
