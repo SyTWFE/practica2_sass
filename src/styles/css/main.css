@@ -1,4 +1,6 @@
 .container, .subcontainer2, .subcontainer3, .subcontainer4 {
+  font: Verdana;
+  font-family: PT Sans;
   width: 100%;
   height: 350px;
   background-color: #c3a2c3;
@@ -18,9 +20,8 @@
     flex-direction: column;
     float: left;
     width: 25%;
-    height: 80%;
+    height: 400px;
     background-color: #ebe0eb;
-    margin: auto;
     text-align: center;
     box-shadow: inset 0 0 0 1px black;
     padding-top: 5px;
@@ -31,9 +32,8 @@
     flex-direction: column;
     float: left;
     width: 25%;
-    height: 80%;
+    height: 400px;
     background-color: #ebe0eb;
-    margin: auto;
     text-align: center;
     box-shadow: inset 0 0 0 1px black;
     padding-top: 5px;
@@ -44,9 +44,8 @@
     flex-direction: column;
     float: left;
     width: 25%;
-    height: 80%;
+    height: 400px;
     background-color: #ebe0eb;
-    margin: auto;
     text-align: center;
     box-shadow: inset 0 0 0 1px black;
     padding-top: 5px;
@@ -57,9 +56,8 @@
     flex-direction: column;
     float: left;
     width: 25%;
-    height: 80%;
+    height: 400px;
     background-color: #ebe0eb;
-    margin: auto;
     text-align: center;
     box-shadow: inset 0 0 0 1px black;
     padding-top: 5px;
@@ -80,24 +78,58 @@
 .logo {
   width: 400px;
   height: 150px;
-  box-shadow: inset 0 0 0 1px black; }
+  box-shadow: inset 0 0 0 1px black;
+  border-radius: 8px; }
 
-/*
-.div div { border: solid;
-    width: 30%; 
-    height: 400px;
-    margin: 1%;
-    float: left; }
-
-    @media screen and (max-width: 720px) {
-        div div { border: solid;
-                width: 90%; 
-                height: 400px;
-                margin: 5%; }
-              }
-*/
 .icon {
   width: 150px;
   height: 150px;
   margin: auto;
-  box-shadow: inset 0 0 0 1px black; }
+  box-shadow: inset 0 0 0 1px black;
+  border-radius: 8px; }
+
+.text {
+  direction: ltr;
+  text-align: left;
+  margin: 10px 10px 10px 10px;
+  height: 150px;
+  width: 80%; }
+
+.title {
+  text-shadow: black 6px 6px 8px; }
+
+.estrellas {
+  unicode-bidi: bidi-override;
+  align-content: flex-start; }
+
+.calificado {
+  color: orange; }
+
+.sincalificar {
+  color: grey; }
+
+.valoraciones .valoraciones1 {
+  text-align: left; }
+
+.valoraciones .valoraciones2 {
+  text-align: left; }
+
+.contacto {
+  width: 600px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical; }
+
+.button {
+  background-color: #e7e7e7;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px 10px 50px;
+  cursor: pointer; }

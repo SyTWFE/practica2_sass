@@ -10,6 +10,7 @@
     width: $width_logo;
     height: $height_logo;
     box-shadow: inset 0 0 0 1px black;
+    border-radius: 8px;
 }
 
 @mixin productos($color) {
@@ -24,7 +25,7 @@
             height: $height_div_positions;      
             
             background-color: $color;
-            margin: auto;
+            
             text-align: center;
             box-shadow: inset 0 0 0 1px black;
             padding-top: 5px;
@@ -38,4 +39,13 @@
     height: $height_icon;
     margin: auto;
     box-shadow: inset 0 0 0 1px black;
+    border-radius: 8px;
+}
+
+@mixin valoraciones {
+    @for $i from 1 through 2{ 
+        .#{valoraciones}#{$i}{
+            text-align: left;
+        }    
+    }
 }
