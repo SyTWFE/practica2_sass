@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/styles/css/main.css">
+    <link rel="stylesheet" href="src/styles/css/materialize.css">
+
+    <script src="src/js/materialize.min.js"></script>
+
+    
     <title>Practica SASS</title>
-    <link rel="stylesheet" href="src/styles/css/main.css" type="text/css" media="all">
+    
   </head>
   
   <body>
-  <script src="src/scripts/main.js"></script>
 
-  <div class="container">
+  <div class="contenedor">
         <img class="logo" src="src/img/logo.png">
-        <h1 class="title">Sistemas y Técnologias Web: FrontEnd</h1>
-        <h2>Resumen de prácticas</h2>
+        <h1 class="titulo">Sistemas y Técnologias Web: FrontEnd</h1>
+        <h2 class="subtitulo">Resumen de prácticas</h2>
   </div>
 
     <div class="subcontainer1">
       <div class="productos1">
-        <h3>Node</h3>
+        <h3 class="tema">Node</h3>
         <img class="icon" src="src/img/node.png">
         <p class="text">Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.</p>
-        <a href="https://www.w3schools.com">Más información</a>        
+        <a href="https://nodejs.org/es/">Más información</a>        
       </div>
 
       <div class="productos2">
-        <h3>Gulp</h3>
+        <h3 class="tema">Gulp</h3>
         <img class="icon" src="src/img/gulp.png">
         <p class="text">Is an open-source JavaScript toolkit used as a streaming build system 
           (similar to a more package-focussed Make) in front-end web development.</p>
-        <a href="https://www.w3schools.com">Más información</a>  
+        <a href="https://gulpjs.com/">Más información</a>  
       </div>
 
       <div class="productos3">
-        <h3>Sass</h3>
+        <h3 class="tema">Sass</h3>
         <img class="icon" src="src/img/sass.png">
         <p class="text">(Short for syntactically awesome style sheets) is a preprocessor scripting
            language that is interpreted or compiled into Cascading Style Sheets (CSS) </p>
-        <a href="https://www.w3schools.com">Más información</a> 
+        <a href="https://sass-lang.com/guide">Más información</a> 
             
       </div>
 
       <div class="productos4">
-        <h3>Proximamente</h3>
+        <h3 class="tema">Proximamente</h3>
         <img class="icon" src="src/img/soon.png">
         <p class="text">Muy pronto...</p>
-        <a href="https://www.w3schools.com">Más información</a>  
+        <a href="https://www.ull.edu.es">Más información</a>  
       </div>
     </div>
 
     <div class="subcontainer2" title="Valoraciones">
-      <h1>Valoraciones</h1>
+      <h3 class="tema">Valoraciones</h3>
       <div>
-
         <div class="valoracion1">
           <p class="estrellas">            
             <label class="calificado">★</label>
             <label class="calificado">★</label>
             <label class="calificado">★</label>
             <label class="calificado">★</label>
-            <label> Intuitivo, de fácil aprendizaje</label>     
+            <label class="texto"> Intuitivo, de fácil aprendizaje</label>     
           </p>
         </div>
 
@@ -71,7 +80,7 @@
             <label class="calificado">★</label>
             <label class="calificado">★</label>
             <label class="calificado">★</label>
-            <label>Agiliza los proyectos y minimiza su complejidad</label>   
+            <label class="texto">Agiliza los proyectos y minimiza su complejidad</label>   
           </p>
         </div>
 
@@ -82,47 +91,49 @@
             <label class="calificado">★</label>
             <label class="calificado">★</label>
             <label class="calificado">★</label>
-            <label>Gran variedad de contenido en redes</label>   
+            <label class="texto">Gran variedad de contenido en redes</label>   
           </p>
-        </div>
-        
-      </div>
-      
-        
+        </div>        
+      </div>       
     </div>
 
     <div class="subcontainer3" title="Contacto">
-      <h1>Contacto</h1>
-
+      <h3 class="tema">Contacto</h3>
       <p>
-            <input class="contacto" type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nombre">
+        <input class="contacto" type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nombre">
       </p>
-
       <p>
-            <input class="contacto" type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Email">
+        <input class="contacto" type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Email">
       </p>
-
       <p>
-            <input class="contacto" type="tel" name="introducir_telefono" id="telefono" placeholder="Teléfono">
+        <input class="contacto" type="tel" name="introducir_telefono" id="telefono" placeholder="Teléfono">
       </p>
-
       <p>
-            <input class="contacto" type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Asunto">
-    </p>
-
-    <p>                   
+        <input class="contacto" type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Asunto">
+      </p>
+      <p>
         <textarea class="contacto" name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Mensaje..."></textarea> 
-    </p>
+      </p>
 
-    <button class="button" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+      <a class="btn-floating btn-large cyan pulse">Enviar<i class="material-icons">send</i></a>
 
+    </br>
+      
     </div>
 
     <div class="subcontainer4" title="Info">
-      <h1>Info</h1>
+      <h3 class="tema">Info</h3>
+      <a href="https://www.ull.edu.es">Universidad de La Laguna</a>
+    </br>
     </div>
 
+    
+
+
   </divc>
+
+  <script src="src/scripts/main.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
   </body>
 </html>

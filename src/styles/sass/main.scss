@@ -3,7 +3,7 @@
 @import "mixins";
 
 
-.container{
+.contenedor{
     font: $font;
     font-family: $fontfamily;
     width: $width_div;
@@ -17,7 +17,7 @@
  
         .#{subcontainer}#{$i}{
             @if($i != 1){
-                @extend .container;
+                @extend .contenedor;
                 background-color: nth($subcontainercolors, $i);
                 height: $height_subcontainer;
             }
@@ -29,13 +29,6 @@
         } 
 }
 
-.logo{
-    @include logo;
-}
-
-.icon{
-    @include icon;
-}
 
 .text{
     direction:ltr;
@@ -45,10 +38,6 @@
     width: 80%;
 }
 
-.title{
-    text-shadow: black 6px 6px 8px;
-}
-
 .estrellas {
     unicode-bidi: bidi-override;
     align-content: flex-start;
@@ -56,6 +45,7 @@
 
 .calificado {
     color: orange;
+    font-size: 20px;
   }
   
 .sincalificar {
@@ -75,17 +65,73 @@
     resize: vertical;
 }
 
+// Logo e iconos
+.logo{
+    @include logo($width_logo,$height_logo);
+}
+
+.icon{
+    @include icon($width_icon,$height_icon);
+}
+
+// Button Hover
 .button{
+    border-radius: 4px;
     background-color: #e7e7e7;
     border: none;
     color: black;
-    padding: 15px 32px;
+    
     text-align: center;
-    text-decoration: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
     display: inline-block;
     font-size: 16px;
     margin: 10px 10px 10px 50px;
     cursor: pointer;
+}
+
+.button span {
+    @extend .button;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+// Encabezados
+.titulo{
+    @include encabezados(black,50px,true);
+}
+
+.subtitulo{
+    @include encabezados(black,40px,false);
+}
+
+.tema{
+    @include encabezados(black,30px,false);
+}
+
+.texto{
+    @include encabezados(black,20px,false);
 }
   
 

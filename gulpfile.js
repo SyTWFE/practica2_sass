@@ -20,12 +20,8 @@ gulp.task('sass', () => {
 
 gulp.task('del', () => {
     return del([
-        'src/styles/css/**/*.css'
+        'src/styles/css/main.css'
     ]);
-});
-
-gulp.task('watch-files', () => {
-    gulp.watch('./sass/*.scss', gulp.series(['del','styles', browsersync.reload]));
 });
 
 gulp.task('default', gulp.series(['del', 'sass', 'serve']));
